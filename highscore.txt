@@ -1,6 +1,7 @@
 br33x 17
 br33x 16
 br33x 16
+brx 12
 br33x 11
 kut 10
 asdf 8
@@ -9,11 +10,11 @@ asdf 3
 snake 2
 br33x 2
 brx 2
-brex 1
 asdfadwf 1
 mark 1
 asdf 1
 asdf 1
+brex 1
 Player2 0
 Player3 0
 Player5 0

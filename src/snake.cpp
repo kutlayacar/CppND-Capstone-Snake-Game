@@ -2,6 +2,7 @@
 #include <cmath>
 #include <iostream>
 
+
 void Snake::Update() {
   SDL_Point prev_cell{
       static_cast<int>(head_x),
@@ -57,10 +58,14 @@ void Snake::UpdateBody(SDL_Point &current_head_cell, SDL_Point &prev_head_cell) 
 
   // Check if the snake has died.
   for (auto const &item : body) {
-    if (current_head_cell.x == item.x && current_head_cell.y == item.y) {
+    if ((current_head_cell.x == item.x && current_head_cell.y == item.y)) {
       alive = false;
     }
   }
+
+    if (current_head_cell.x < 1 || current_head_cell.x >= grid_width - 1 ||
+        current_head_cell.y < 1 || current_head_cell.y >= grid_height - 1)
+        alive = false;
 }
 
 void Snake::GrowBody() { growing = true; }
