@@ -1,12 +1,49 @@
-# CPPND: Capstone Snake Game Example
+# Capstone Project: Snake Game
 
 This is an implementation of the game for the Capstone project in the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213). The code for this repo was inspired by [this](https://codereview.stackexchange.com/questions/212296/snake-game-in-c-with-sdl) excellent StackOverflow post and set of responses.
 
 <img src="Snake.gif"/>
 
-The Capstone Project gives me a chance to integrate what I've learned throughout this program.
+The Capstone Project gave me a chance to integrate what I've learned throughout this program.
+
+##Changes and Features
+1. Update README.md to reflect this repository content.
+2. Implementation of new concepts:
+    * Fixed food placement (Food would not spawn outside of the game area.)
+    * Addition of Player, Replay and Highscore classes.
+    * Wall around the area, which is impossible to cross.
+3. Small cosmetic changes.
+
+##Structure
+###Classes
+* `Snake`: Responsible of the snake, moving and growing.
+* `Controller`: For user input to move the snake.
+* `Renderer`: Renders the game with [SDL](https://www.libsdl.org) Library.
+* `Game`: Responsible for the states of the game.
+* `Player`: Handles the name and score of the player.
+* `Replay`: Handles Replay and Termination of the game.
+* `Highscore`: Updates the highscore table.
+
+
+## Adressed Project Criteria
+### Loops, Funtions, I/O
+* The project demonstrates an understanding of C++ functions and control structures.
+* The project reads data from a file and process the data, or the program writes data to a file.
+* The project accepts user input and processes the input.
+
+### Onject Oriented Programming
+* The project uses Object Oriented Programming techniques.
+* Classes use appropriate access specifiers for class members.
+* Class constructors utilize member initialization lists.
+* Classes abstract implementation details from their interfaces.
+* Classes encapsulate behavior.
+
+### Memory Management
+* The project makes use of references in function declarations.
+* The project uses destructors appropriately.
 
 ## Dependencies for Running Locally
+
 * cmake >= 3.7
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
 * make >= 4.1 (Linux, Mac), 3.81 (Windows)
