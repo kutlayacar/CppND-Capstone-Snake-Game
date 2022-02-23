@@ -35,6 +35,7 @@ int main() {
       std::cout << "Score: " << game.GetScore() << "\n";
       std::cout << "Size: " << game.GetSize() << "\n\n";
 
+      highScore.Read();
       highScore.Update(player.getName(), game.GetScore());
       highScore.Write();
       highScore.Print();

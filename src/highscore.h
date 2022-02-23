@@ -18,6 +18,7 @@ const int kMaxentries = 100;
 
 class HighScore{
 public:
+    void Read(void);
     void Write(void);
     void Print(void);
     int Update(std::string playerName, int score);
